@@ -1,0 +1,38 @@
+
+.score {
+    font-size: 32px;
+}
+
+h1 {
+    color: #4c5353;
+}
+
+body {
+    background-image: url("../images/stardust.png");
+    margin: 0;
+
+}
+
+.container {
+    background-color:rgb(236, 236, 236);
+    padding: 40px;
+    border: rgb(197, 197, 197) 2px solid;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+    border-bottom: rgb(197, 197, 197) 2px solid;
+    background-color:rgb(236, 236, 236);
+    width: 100%;
+    text-align: center;
+}
+
+.introScore {
+    margin-top: 20px;
+}
+
+.imgfluid {
+    max-width: 100%;
+    height: auto;
+}
