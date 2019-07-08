@@ -48,15 +48,14 @@ randomGemgenerator ()
 
 //Ensure Crystals can make it to randomly generated number -- opt
 
-/
 $("#purple-gem").on("click", function() {
     Playscore = Playscore + purpleGemNumber;
     $("#playerScore").html(Playscore);
 
-    if (Playerscore == randomNumber){
+    if (Playscore == randomNumber){
         gameWin();
       }
-      else if (Playerscore > randomNumber){
+      else if (Playscore > randomNumber){
         gameLoss();
       } 
 });
@@ -107,21 +106,29 @@ $("#blue-gem").on("click", function() {
         alert("You did it! You won!");
           Win++; 
           $("#Wins").html("Wins:" + Win);
+          resetGame()
         }
 
 
 //Loses
-	//storing loses
-	//reseting game
-//setting variables to beginning
+	//storing and displaying loses
 
 function gameLoss(){
     alert("You lost. Try again?");
       Loss++; 
       $("#Losses").html("Losses: " + Loss);
+      resetGame()
     }
 
-    //on-click functions for gems
+//reset game
+function resetGame() {
+  Playscore = 0;
+  $("#playerScore").html(Playscore);
+  randomNumberGenerator ()
+  randomGemgenerator ()
+
+}
+
 
 });
 
